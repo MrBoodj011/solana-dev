@@ -1,0 +1,94 @@
+name: Bug report
+description: Report a reproducible defect in solana-dev.
+title: "bug: "
+labels:
+  - bug
+body:
+  - type: markdown
+    attributes:
+      value: Thanks for helping improve solana-dev. Do not include private keys, seed phrases, or production secrets.
+  - type: textarea
+    id: summary
+    attributes:
+      label: Summary
+      description: Describe the observed behavior and why it is incorrect.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Reproduction
+      description: Provide the smallest code sample or test that reproduces the issue.
+      placeholder: Include commands, inputs, and the exact result.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Version or commit
+      placeholder: v1.0.0 or commit SHA
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment
+      description: Rust version, target, operating system, and relevant feature flags.
+    validations:
+      required: true
+*** Add File: C:\Users\adjar\Documents\Codex\2026-07-17\pentesterflow-agent-git-https-github-com\work\audit-solana-dev\.github\ISSUE_TEMPLATE\feature_request.yml
+name: Feature request
+description: Propose a focused addition to the public API or developer experience.
+title: "feat: "
+labels:
+  - enhancement
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem
+      description: Explain the concrete use case that is not covered today.
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed solution
+      description: Describe the API and behavior you would like to add.
+    validations:
+      required: true
+  - type: textarea
+    id: safety
+    attributes:
+      label: Safety and compatibility
+      description: Note overflow, replay, compatibility, or migration considerations.
+    validations:
+      required: true
+*** Add File: C:\Users\adjar\Documents\Codex\2026-07-17\pentesterflow-agent-git-https-github-com\work\audit-solana-dev\.github\ISSUE_TEMPLATE\config.yml
+blank_issues_enabled: false
+contact_links:
+  - name: Security vulnerability
+    url: https://github.com/MrBoodj011/solana-dev/security/advisories/new
+    about: Report vulnerabilities privately instead of opening a public issue.
+*** Add File: C:\Users\adjar\Documents\Codex\2026-07-17\pentesterflow-agent-git-https-github-com\work\audit-solana-dev\.github\PULL_REQUEST_TEMPLATE.md
+## Summary
+
+Explain the problem and the smallest solution implemented by this pull request.
+
+## Verification
+
+- [ ] `cargo fmt --check`
+- [ ] `cargo clippy --all-targets --all-features -- -D warnings`
+- [ ] `cargo test --all-features`
+- [ ] Public API and security implications were reviewed
+- [ ] Documentation or changelog was updated when required
+
+## Safety notes
+
+Describe overflow, replay, compatibility, and migration considerations. Do not include private keys, seed phrases, or production secrets.

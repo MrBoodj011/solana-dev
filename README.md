@@ -102,4 +102,4 @@ See [CONTRIBUTING.md](CONTRIBUTING.md), [SECURITY.md](SECURITY.md), and [CODE_OF
 
 ## Author and license
 
-Created and maintained by [Reda Adjar (MrBoodj011)](https://github.com/MrBoodj011), founder of Cybrense IT Services. Released under the [MIT License](LICENSE).
+Created and maintained by [Reda Adjar (MrBoodj011)](https://github.com/MrBoodj011). Released under the [MIT License](LICENSE).
