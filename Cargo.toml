@@ -1,0 +1,21 @@
+[package]
+name = "solana-safety-lab"
+version = "0.1.0"
+edition = "2024"
+rust-version = "1.85"
+description = "Dependency-free Rust guardrails for security-sensitive Solana program logic"
+license = "MIT"
+repository = "https://github.com/MrBoodj011/solana-dev"
+readme = "README.md"
+keywords = ["solana", "security", "vesting", "pda", "rust"]
+categories = ["cryptography::cryptocurrencies", "development-tools::testing"]
+
+[lib]
+name = "solana_safety_lab"
+path = "src/lib.rs"
+
+[profile.release]
+overflow-checks = true
+lto = "thin"
+codegen-units = 1
+
